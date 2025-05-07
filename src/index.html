@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile Page</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <main class="profile-page">
+    <h1 class="profile-page__title">User Profile</h1>
+
+    <section class="profile-section" id="basic-details">
+      @@include('partials/_basicDetails.html')
+
+    </section>
+
+    <section class="profile-section" id="password-update">
+      @@include('partials/_passwordUpdate.html')
+    </section>
+
+    <section class="profile-section" id="recent-trips">
+      @@include('partials/_recentTrips.html')
+    </section>
+
+    <section class="profile-section" id="deactivate-account">
+      @@include('partials/_deactivateModal.html')
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

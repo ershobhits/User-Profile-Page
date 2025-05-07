@@ -1,0 +1,29 @@
+@use 'variables' as *;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: $text-color;
+  }
+
+  input, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    font-family: $font-stack;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .password-strength {
+    font-size: 0.9em;
+    color: $secondary-color;
+  }
+}

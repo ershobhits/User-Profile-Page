@@ -1,0 +1,21 @@
+git {
+  "name": "user-profile-task",
+  "version": "1.0.0",
+  "description": "Modular User Profile Page using Gulp, HTML, SCSS, and JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp styles && gulp html && gulp scripts"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-file-include": "^2.3.0",
+    "sass": "^1.32.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-sass": "^6.0.1"
+  }
+}

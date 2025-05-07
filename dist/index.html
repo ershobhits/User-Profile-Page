@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile Page</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <main class="profile-page">
+    <h1 class="profile-page__title">User Profile</h1>
+
+    <section class="profile-section" id="basic-details">
+      <form class="form form--details" id="basicDetailsForm">
+    <h2>Basic Details</h2>
+    <label>Full Name<input type="text" name="fullName" required /></label>
+    <label>Email<input type="email" name="email" required /></label>
+    <label>Phone<input type="tel" name="phone" required /></label>
+    <label>Address<textarea name="address" required></textarea></label>
+    <label>Profile Image<input type="file" id="profileImage" accept="image/*" />
+      <img id="imagePreview" alt="Image Preview" style="display:none;" />
+    </label>
+    <button type="submit" class="btn">Save Changes</button>
+  </form>
+  
+
+    </section>
+
+    <section class="profile-section" id="password-update">
+      <form class="form form--password" id="passwordForm">
+  <h2>Update Password</h2>
+  <label>New Password<input type="password" name="newPassword" id="newPassword" required /></label>
+  <label>Confirm Password<input type="password" name="confirmPassword" id="confirmPassword" required /></label>
+  <div id="strengthIndicator" class="password-strength">Strength: </div>
+  <button type="submit" class="btn">Update Password</button>
+</form>
+
+    </section>
+
+    <section class="profile-section" id="recent-trips">
+      <section class="trips">
+  <h2>Recent Trips</h2>
+  <div class="trips__list">
+    <div class="trip-card">
+      <h3>Paris Vacation</h3>
+      <p>Date: 2024-11-10</p>
+      <p>Amount: $1200</p>
+      <a href="#" class="btn btn--download">Download Bill</a>
+    </div>
+    <div class="trip-card">
+      <h3>New York Getaway</h3>
+      <p>Date: 2024-09-05</p>
+      <p>Amount: $950</p>
+      <a href="#" class="btn btn--download">Download Bill</a>
+    </div>
+  </div>
+</section>
+
+    </section>
+
+    <section class="profile-section" id="deactivate-account">
+      <div class="deactivate-account">
+  <h2>Deactivate Account</h2>
+  <button class="btn btn--danger" id="deactivateBtn">Deactivate Account</button>
+  <div id="deactivateModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal__content">
+      <h3>Confirm Deactivation</h3>
+      <p>Type <strong>"deactivate"</strong> to confirm:</p>
+      <input type="text" id="deactivateInput" />
+      <button id="confirmDeactivate" class="btn btn--danger" disabled>Confirm</button>
+      <button class="btn btn--secondary" id="cancelDeactivate">Cancel</button>
+    </div>
+  </div>
+</div>
+
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
