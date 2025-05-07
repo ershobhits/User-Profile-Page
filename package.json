@@ -1,4 +1,4 @@
-git {
+{
   "name": "user-profile-task",
   "version": "1.0.0",
   "description": "Modular User Profile Page using Gulp, HTML, SCSS, and JS",
